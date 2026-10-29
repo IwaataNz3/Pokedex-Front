@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  color: #dc2626;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+input {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+input:focus {
+  outline: 2px solid #fca5a5;
+  border-color: #dc2626;
+}
+
+.acoes-formulario {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  padding: 0.55rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #dc2626;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.secundario {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+button.perigo {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.cabecalho-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cabecalho-lista h2 {
+  margin: 0;
+}
+
+.busca {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.busca input {
+  width: 170px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  padding: 0.6rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.acoes {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: flex-end;
+}
+
+.vazio {
+  color: #6b7280;
+}
+
+.mensagem {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.mensagem.sucesso {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.mensagem.erro {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+@media (max-width: 640px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
